@@ -1,27 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
 
+@import "./foundation.min.css";
+
 /* Common Style */
-.row {
+.row.row {
 	max-width: 1100px;
-	margin: auto;
-	display: flex;
-}
-
-.align-middle {
-	align-items: center;
-}
-
-.align-spaced {
-	justify-content: space-between;
-}
-
-.columns, .column {
-	padding: 0 10px;
-	width: 33%;
-}
-
-.text-center {
-	text-align: center;
 }
 
 body {
@@ -64,9 +47,29 @@ body {
 	color: #fff;
 }
 
+/* Recipe form style */
+.recipe-form {
+	padding: 30px 0;
+}
+
+.recipe-form--input {
+	border: none;
+	border-bottom: 2px solid rgba(88, 41, 199, 0.7);
+	margin-right: 15px;
+	outline: none;
+}
+
+.recipe-form--submit {
+	background: rgba(88, 41, 199, 0.7);
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	padding: 9px 10px;
+}
+
 /* Recipe list style */
 .recipe-list {
-	padding: 60px 0;
+	padding: 30px 0;
 	display: block;
 	overflow: hidden;
 }
@@ -74,7 +77,6 @@ body {
 .recipe-list .columns {
 	float: left;
 	width: 30%;
-
 }
 
 .recipe-list--wrap {
